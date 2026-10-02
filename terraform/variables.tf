@@ -24,9 +24,9 @@ variable "enable_gpu" {
 }
 
 variable "cpu_instance_type" {
-  description = "Instance type for the default CPU (LightGBM) compute node"
+  description = "Instance type for the default CPU (LightGBM) compute node. This account is restricted to Free Tier eligible types."
   type        = string
-  default     = "t3.medium"
+  default     = "c7i-flex.large"
 }
 
 variable "gpu_instance_type" {
